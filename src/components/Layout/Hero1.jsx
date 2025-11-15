@@ -1,4 +1,4 @@
-import heroBg from "../assets/Images/heroimg.jpg";
+import heroBg from "../../assets/Images/heroimg.jpg";
 
 function Header() {
   return (
@@ -8,7 +8,7 @@ function Header() {
     >
 
       {/* NAVBAR */}
-      <div className="relative w-full flex items-center justify-between py-6 px-8">
+      <div className="relative w-full flex items-center justify-between py-16 px-8">
         <h1 className="text-2xl font-bold tracking-tight">The MuseHall</h1>
 
         <nav>

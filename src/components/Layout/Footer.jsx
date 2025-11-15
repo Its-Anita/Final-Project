@@ -3,7 +3,7 @@ import { FaInstagram, FaTwitter, FaPinterest, FaLinkedin } from "react-icons/fa"
 function Footer() {
   return (
     <footer className="bg-stone-700 text-black">
-      <div className="max-w-6xl mx-auto px-6 lg:px-12 py-6">
+      <div className="max-w-6xl mx-auto px-6 lg:px-12 py-16">
         {/* Top: Gallery Name + Social Icons */}
         <div className="flex justify-between items-center border-b border-gray-300 pb-6">
           {/* Gallery Name */}

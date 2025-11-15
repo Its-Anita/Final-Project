@@ -47,7 +47,7 @@ function Testimonial() {
   const t = testimonials[index];
 
   return (
-    <section className="w-full bg-neutral-50 py-20 px-6 md:px-16 grid md:grid-cols-2 gap-10 items-center">
+    <section className="w-full bg-neutral-50 py-16 px-6 md:px-16 grid md:grid-cols-2 gap-10 items-center">
       {/* Left Content */}
       <div>
         <h2 className="text-4xl font-bold text-gray-900 mb-6">

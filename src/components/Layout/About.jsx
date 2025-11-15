@@ -1,8 +1,8 @@
-import aboutImg from "../assets/Images/about.jpg";
+import aboutImg from "../../assets/Images/about.jpg";
 
 function AboutSection() {
   return (
-    <section className="py-28 bottom-5 w-full px-6 md:px-12 bg-white " >
+    <section className="py-28 bottom-5 w-full px-6 md:px-16 bg-white " >
       <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center">
         
         {/* Left Side Image */}

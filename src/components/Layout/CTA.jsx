@@ -1,4 +1,4 @@
-import ctaBg from "../assets/Images/cta.jpg";
+import ctaBg from "../../assets/Images/cta.jpg";
 
 function CTA() {
   return (
@@ -10,7 +10,7 @@ function CTA() {
       ></div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-6xl mx-auto px-6 py-24 flex flex-col md:flex-row items-center gap-12">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center gap-12">
         
         {/* Left Side Empty */}
         <div className="md:w-1/2 hidden md:block"></div>

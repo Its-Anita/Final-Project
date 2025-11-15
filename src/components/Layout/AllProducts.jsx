@@ -1,11 +1,11 @@
-import artwork1 from "../assets/Images/eternal_bloom.jpeg";
-import artwork2 from "../assets/Images/whispering_shadows.jpeg";
-import artwork3 from "../assets/Images/golden_horizon.jpeg";
-import artwork4 from "../assets/Images/mystic_forest.jpeg";
-import artwork5 from "../assets/Images/silent_echoes.jpeg";
-import artwork6 from "../assets/Images/urban_rhythm.jpeg";
-import artwork7 from "../assets/Images/celestial_dreams.jpeg";
-import artwork8 from "../assets/Images/abstract_serenity.jpeg";
+import artwork1 from "../../assets/Images/eternal_bloom.jpeg";
+import artwork2 from "../../assets/Images/whispering_shadows.jpeg";
+import artwork3 from "../../assets/Images/golden_horizon.jpeg";
+import artwork4 from "../../assets/Images/mystic_forest.jpeg";
+import artwork5 from "../../assets/Images/silent_echoes.jpeg";
+import artwork6 from "../../assets/Images/urban_rhythm.jpeg";
+import artwork7 from "../../assets/Images/celestial_dreams.jpeg";
+import artwork8 from "../../assets/Images/abstract_serenity.jpeg";
 
 function ArtGallery() {
   const artPieces = [

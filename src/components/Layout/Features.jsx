@@ -1,8 +1,8 @@
-import bestImage from "../assets/Images/newin4.jpeg";
+import bestImage from "../../assets/Images/newin4.jpeg";
 
 function Gallery1() {
   return (
-    <section className="bg-white flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-20">
+    <section className="bg-white flex flex-col md:flex-row md:grid-cols-2 items-center justify-between px-6 md:px-16 py-16">
       
       {/* Text Section */}
       <div className="md:w-1/2 text-center md:text-left space-y-6">
