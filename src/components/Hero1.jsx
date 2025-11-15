@@ -1,66 +1,80 @@
-import heroBg from "../assets/Aesthetics.jpg";
+import heroBg from "../assets/Images/heroimg.jpg";
 
-function Hero() {
+function Header() {
   return (
-    <section
-      className="relative min-w-screen flex flex-col justify-between bg-center bg-cover"
+    <header
+      className="relative bg-cover bg-center text-black shadow-lg h-[90vh]"
       style={{ backgroundImage: `url(${heroBg})` }}
     >
 
       {/* NAVBAR */}
-      <nav className="relative z-10 flex items-center justify-between px-6 py-6 text-white">
-        <h1 className="font-bold text-2xl">SoulSpace</h1>
+      <div className="relative w-full flex items-center justify-between py-6 px-8">
+        <h1 className="text-2xl font-bold tracking-tight">The MuseHall</h1>
 
-        <ul className="flex items-center gap-8 text-lg">
-          <li className="hover:text-gray-300 cursor-pointer">Home</li>
-          <li className="hover:text-gray-300 cursor-pointer">About</li>
-          <li className="hover:text-gray-300 cursor-pointer">Features</li>
-          <li className="hover:text-gray-300 cursor-pointer">Contact</li>
-        </ul>
-      </nav>
+        <nav>
+          <ul className="flex items-end space-x-4 text-lg font-medium text-black mt-2">
+            <li className="hover:text-yellow transition-colors cursor-pointer">
+               Home
+            </li>
+            <li className="hover:text-yellow transition-colors cursor-pointer">
+              Exhibitions
+            </li>
+            <li className="hover:text-yellow transition-colors cursor-pointer">
+              Artists
+            </li>
+            <li className="hover:text-yellow transition-colors cursor-pointer">
+              Contact
+            </li>
+          </ul>
+        </nav>
+      </div>
 
-      {/* CENTER CONTENT */}
-      <div className="relative z-10 text-center text-white max-w-5xl mx-auto px-4">
-        <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4">
-          Where Art Finds Its Soul
-        </h1>
+      {/* HERO SECTION */}
+      <div className="relative container mx-auto text-center px-8 mt-20">
+        <h2 className="text-4xl md:text-6xl font-extrabold mb-4">
+          Discover the Soul of Contemporary Art
+        </h2>
 
-        <p className="text-gray-200 mb-8">
-          Discover authentic expressions, connect with artists, and become part of
-          a living, evolving cultural gallery.
+        <p className="max-w-2xl mx-auto text-xl text-gray-900 mb-6">
+          Curated masterpieces that inspire, challenge, and captivate a
+          sanctuary for art lovers and collectors alike.
         </p>
 
-        <button className="px-13 py-5 bg-white/80 hover:bg-white text-white font-medium rounded-full transition">
+        <button className="bg-gold-500 hover:bg-gold-600 transition px-10 py-3 rounded-full text-white font-semibold"
+        onClick={() => window.location.href = '#allfeatures'}>
           Explore Gallery
         </button>
       </div>
 
-      {/* STATS BAR */}
-      <div className="relative z-7 bg-[#0F544E] absolute center text-white py-5 rounded-t-3xl">
-        <div className="min-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 text-center gap-4 px-4">
-          <div>
-            <h2 className="text-4xl font-bold">150+</h2>
-            <p className="text-sm">Curated Works</p>
-          </div>
+      {/* STATS — positioned at bottom */}
+      <div
+        className="absolute left-1/2 transform -translate-x-1/2 bottom-[-50px] 
+                      bg-stone-700 text-black rounded-xl shadow-xl 
+                      grid grid-cols-3 md:grid-cols-4 gap-6 
+                      px-8 py-6 w-[85%] md:w-[60%] text-center"
+      >
+        <div>
+          <h3 className="text-3xl font-bold">15</h3>
+          <p className="text-gray-900 text-sm">Years Curating</p>
+        </div>
 
-          <div>
-            <h2 className="text-4xl font-bold">77+</h2>
-            <p className="text-sm">Featured Artist</p>
-          </div>
+        <div>
+          <h3 className="text-3xl font-bold">50+</h3>
+          <p className="text-gray-900 text-sm">Featured Artists</p>
+        </div>
 
-          <div>
-            <h2 className="text-4xl font-bold">18</h2>
-            <p className="text-sm">Exhibitions Held</p>
-          </div>
+        <div>
+          <h3 className="text-3xl font-bold">200+</h3>
+          <p className="text-gray-900 text-sm">Exhibitions Held</p>
+        </div>
 
-          <div>
-            <h2 className="text-4xl font-bold">10k+</h2>
-            <p className="text-sm">Visitors Inspired</p>
-          </div>
+        <div>
+          <h3 className="text-3xl font-bold">10k+</h3>
+          <p className="text-gray-900 text-sm">Visitors Served</p>
         </div>
       </div>
-    </section>
+    </header>
   );
 }
 
-export default Hero;
+export default Header;
