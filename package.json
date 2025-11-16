@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "tw:init": "tailwindcss init",
-  "tw:init-p": "tailwindcss init -p"
+    "tw:init-p": "tailwindcss init -p"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.16",

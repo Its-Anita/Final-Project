@@ -47,53 +47,53 @@ function Testimonial() {
   const t = testimonials[index];
 
   return (
-    <section className="w-full bg-neutral-50 py-16 px-6 md:px-16 grid md:grid-cols-2 gap-10 items-center">
+    <section className="w-full bg-neutral-50 py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 md:px-8 lg:px-16 grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-center">
       {/* Left Content */}
       <div>
-        <h2 className="text-4xl font-bold text-gray-900 mb-6">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 md:mb-8 leading-tight">
           What People Are Saying About Us
         </h2>
 
         {/* Client */}
-        <div className="flex items-center gap-4 mb-4 transition-all">
+        <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6 transition-all">
           <img
             src={t.image}
             alt={t.name}
-            className="w-14 h-14 rounded-full object-cover"
+            className="w-12 sm:w-14 md:w-16 h-12 sm:h-14 md:h-16 rounded-full object-cover flex-shrink-0"
           />
           <div>
-            <h3 className="font-semibold text-gray-900">{t.name}</h3>
-            <p className="text-gray-500 text-sm">{t.role}</p>
+            <h3 className="font-semibold text-sm sm:text-base md:text-lg text-gray-900">{t.name}</h3>
+            <p className="text-gray-500 text-xs sm:text-sm">{t.role}</p>
           </div>
         </div>
 
         {/* Quote */}
-        <p className="text-gray-700 leading-relaxed max-w-lg">
+        <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed max-w-lg">
           “{t.quote}”
         </p>
 
         {/* Arrows */}
-        <div className="flex gap-4 mt-6">
+        <div className="flex gap-3 sm:gap-4 mt-6 sm:mt-8">
           <button
             onClick={prev}
-            className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-300 hover:bg-gray-200 transition"
+            className="w-10 sm:w-12 h-10 sm:h-12 flex items-center justify-center rounded-full border border-gray-300 hover:bg-gray-200 transition text-lg sm:text-xl"
           >
             ←
           </button>
           <button
             onClick={next}
-            className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-300 hover:bg-gray-200 transition"
+            className="w-10 sm:w-12 h-10 sm:h-12 flex items-center justify-center rounded-full border border-gray-300 hover:bg-gray-200 transition text-lg sm:text-xl"
           >
             →
           </button>
         </div>
       </div>
 
-      <div>
+      <div className="hidden md:block">
         <img
           src="/Images/Gallery room.jpg"
           alt="gallery room"
-          className="rounded-xl shadow-lg w-full object-cover"
+          className="rounded-lg sm:rounded-xl md:rounded-2xl shadow-lg sm:shadow-xl w-full object-cover"
         />
       </div>
     </section>
