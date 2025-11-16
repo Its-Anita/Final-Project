@@ -32,7 +32,7 @@ function CTA() {
             <input
               type="email"
               placeholder="Enter your email"
-              className="px-4 sm:px-5 py-2.5 sm:py-3 rounded-lg sm:rounded-l-lg sm:rounded-r-none w-full sm:flex-1 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#C6A675]"
+              className="px-4 sm:px-5 py-2.5 sm:py-3 rounded-lg sm:rounded-l-lg sm:rounded-r-none w-full sm:flex-1 text-gray-900 bg-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#C6A675]"
             />
             <button
               className="bg-gradient-to-r from-[#7b5e3b] to-[#C6A675]
